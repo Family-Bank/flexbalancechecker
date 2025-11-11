@@ -77,6 +77,7 @@ D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\Flex_
 D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\Flex_Balance_Fetcher.csproj.CoreCompileInputs.cache
 D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\Flex_Balance_Fetcher.MvcApplicationPartsAssemblyInfo.cs
 D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\Flex_Balance_Fetcher.MvcApplicationPartsAssemblyInfo.cache
+D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\Flex_Balance_Fetcher.sourcelink.json
 D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\apps\chatbot\Flex_Balance_Fetcher\Flex_Balance_Fetcher\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
