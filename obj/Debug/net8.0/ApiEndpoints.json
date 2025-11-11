@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Flex_Balance_Fetcher.Controllers.FlexBalanceController",
+    "Method": "GetBalance",
+    "RelativePath": "GetBalance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AccountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
