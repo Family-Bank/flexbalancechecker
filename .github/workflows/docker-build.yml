@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
 
     permissions:
       contents: read
-      packages: write   # Required to push to GHCR
+      packages: write
 
     steps:
       # Step 1: Checkout your code
@@ -37,7 +37,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GHCR_PAT }}   # ✅ Use Personal Access Token here
 
       # Step 5: Build and push Docker image to GHCR
       - name: Build and push Docker image
