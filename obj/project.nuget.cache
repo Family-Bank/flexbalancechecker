@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ri+S6I/d8Wo=",
+  "dgSpecHash": "9Q/VWVOlfWI=",
   "success": true,
   "projectFilePath": "D:\\apps\\chatbot\\Flex_Balance_Fetcher\\Flex_Balance_Fetcher\\Flex_Balance_Fetcher.csproj",
   "expectedPackageFiles": [
@@ -22,5 +22,15 @@
     "C:\\Users\\bmusau\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\bmusau\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "D:\\apps\\chatbot\\Flex_Balance_Fetcher\\Flex_Balance_Fetcher\\Flex_Balance_Fetcher.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\apps\\chatbot\\Flex_Balance_Fetcher\\Flex_Balance_Fetcher\\Flex_Balance_Fetcher.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

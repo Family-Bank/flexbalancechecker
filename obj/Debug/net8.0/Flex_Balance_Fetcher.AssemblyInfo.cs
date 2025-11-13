@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Flex_Balance_Fetcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e60707081600edc10240ca93f8cc50f8f347d1aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3bb140edf3d7020c1449899fc2a715f87b8fb32")]
 [assembly: System.Reflection.AssemblyProductAttribute("Flex_Balance_Fetcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Flex_Balance_Fetcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

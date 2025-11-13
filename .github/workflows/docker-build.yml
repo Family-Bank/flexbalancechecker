@@ -9,6 +9,10 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/flexbalancefetcher
+  CERT_PASSWORD: ${{ secrets.PFX_PASSWORD }}  # store your PFX password in GitHub secrets
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,13 +41,22 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_PAT }}   # ✅ Use Personal Access Token here
+          password: ${{ secrets.GHCR_PAT }}
 
-      # Step 5: Build and push Docker image to GHCR
+      # Step 5: Copy PFX certificate into build context
+      # Note: Ensure your certificate is stored in the repo at ./certs/balancefetcher.pfx (or use secrets)
+      - name: Verify certificate exists
+        run: ls -l ./certs/balancefetcher.pfx
+
+      # Step 6: Build and push Docker image
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ steps.lowercase.outputs.owner }}/flexbalancefetcher:latest
+          tags: |
+            ghcr.io/${{ steps.lowercase.outputs.owner }}/flexbalancefetcher:latest
+            ghcr.io/${{ steps.lowercase.outputs.owner }}/flexbalancefetcher:${{ github.sha }}
+          build-args: |
+            CERT_PASSWORD=${{ secrets.PFX_PASSWORD }}

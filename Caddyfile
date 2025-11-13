@@ -1,0 +1,23 @@
+balancefetcher.cbot-app-uat.familyfinance.co.ke {
+    reverse_proxy https://balancefetcher:8081 {
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
+
+    # Optional: Also proxy HTTP port if needed
+    reverse_proxy balancefetcher:8080
+
+    # Security headers
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        Referrer-Policy "no-referrer-when-downgrade"
+    }
+
+    # CORS headers for API access
+    header Access-Control-Allow-Origin "*"
+    header Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    header Access-Control-Allow-Headers "Content-Type, Authorization"
+}
